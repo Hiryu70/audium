@@ -1,22 +1,17 @@
-import { people } from './data.js';
-import { getImageUrl } from './utils.js';
+import './App.css';
+import Guess from "./components/Guess";
+import { guesses } from './data.js';
 
-export default function List() {
-  const chemists = people.filter(person =>
-    person.profession === 'chemist'
+function App() {
+  const guessesItems = guesses.map(guess => 
+    <Guess state={guess.state} />
+    );
+
+  return (
+    <div class="main-body">
+      <div class="main-title">5 нот</div>
+      {guessesItems}
+    </div>
   );
-  const listItems = chemists.map(person =>
-    <li>
-      <img
-        src={getImageUrl(person)}
-        alt={person.name}
-      />
-      <p>
-        <b>{person.name}:</b>
-        {' ' + person.profession + ' '}
-        known for {person.accomplishment}
-      </p>
-    </li>
-  );
-  return <ul>{listItems}</ul>;
 }
+export default App;

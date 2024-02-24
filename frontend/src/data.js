@@ -1,32 +1,20 @@
-export const people = [{
+export const guesses = [{
     id: 0,
-    name: 'Creola Katherine Johnson',
-    profession: 'mathematician',
-    accomplishment: 'spaceflight calculations',
-    imageId: 'MK3eW3A'
+    state: 'right'
   }, {
     id: 1,
-    name: 'Mario José Molina-Pasquel Henríquez',
-    profession: 'chemist',
-    accomplishment: 'discovery of Arctic ozone hole',
-    imageId: 'mynHUSa'
+    state: 'wrong'
   }, {
     id: 2,
-    name: 'Mohammad Abdus Salam',
-    profession: 'physicist',
-    accomplishment: 'electromagnetism theory',
-    imageId: 'bE7W1ji'
+    state: 'skip'
   }, {
     id: 3,
-    name: 'Percy Lavon Julian',
-    profession: 'chemist',
-    accomplishment: 'pioneering cortisone drugs, steroids and birth control pills',
-    imageId: 'IOjWm71'
+    state: 'no answer'
   }, {
     id: 4,
-    name: 'Subrahmanyan Chandrasekhar',
-    profession: 'astrophysicist',
-    accomplishment: 'white dwarf star mass calculations',
-    imageId: 'lrWQx8l'
+    state: 'no answer'
+  }, {
+    id: 5,
+    state: 'no answer'
   }];
   
