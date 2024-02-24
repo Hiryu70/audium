@@ -1,20 +1,22 @@
 export const guesses = [{
-    id: 0,
-    state: 'right'
-  }, {
-    id: 1,
-    state: 'wrong'
-  }, {
-    id: 2,
+    key: 0,
     state: 'skip'
   }, {
-    id: 3,
+    key: 1,
+    state: 'wrong',
+    text: 'The Middle - Jimmy Eat World'
+  }, {
+    key: 2,
+    state: 'skip'
+  }, {
+    key: 3,
+    state: 'right',
+    text: 'Flash Pose - Pabllo Vittar'
+  }, {
+    key: 4,
     state: 'no answer'
   }, {
-    id: 4,
-    state: 'no answer'
-  }, {
-    id: 5,
+    key: 5,
     state: 'no answer'
   }];
   
