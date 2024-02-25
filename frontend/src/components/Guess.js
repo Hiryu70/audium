@@ -23,7 +23,7 @@ const Guess = ({ state, text }) => {
     case 'skip':
       backgroundColor = 'gray.500';
       borderColor = 'gray.500';
-      text = 'SKIPPED';
+      text = 'ПРОПУСК';
       icon = <ArrowRightIcon boxSize={4} left={3} pos={'absolute'} />;
       letterSpacing = '4px'
       break;

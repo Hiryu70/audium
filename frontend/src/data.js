@@ -4,14 +4,14 @@ export const guesses = [{
   }, {
     key: 1,
     state: 'wrong',
-    text: 'The Middle - Jimmy Eat World'
+    text: 'Если хочешь остаться - ДИСКОТЕКА АВАРИЯ'
   }, {
     key: 2,
     state: 'skip'
   }, {
     key: 3,
     state: 'right',
-    text: 'Flash Pose - Pabllo Vittar'
+    text: 'Малинки - ДИСКОТЕКА АВАРИЯ'
   }, {
     key: 4,
     state: 'no answer'
