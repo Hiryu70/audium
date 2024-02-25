@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Audium.Persistance.Migrations
 {
     [DbContext(typeof(AudiumDbContext))]
-    [Migration("20240225130640_InitialMigration")]
+    [Migration("20240225182313_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -147,7 +147,7 @@ namespace Audium.Persistance.Migrations
             modelBuilder.Entity("Audium.Domain.TrackForDate", b =>
                 {
                     b.HasOne("Audium.Domain.Track", "Track")
-                        .WithMany()
+                        .WithMany("TrackForDates")
                         .HasForeignKey("TrackId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -169,6 +169,11 @@ namespace Audium.Persistance.Migrations
             modelBuilder.Entity("Audium.Domain.Artist", b =>
                 {
                     b.Navigation("Tracks");
+                });
+
+            modelBuilder.Entity("Audium.Domain.Track", b =>
+                {
+                    b.Navigation("TrackForDates");
                 });
 #pragma warning restore 612, 618
         }

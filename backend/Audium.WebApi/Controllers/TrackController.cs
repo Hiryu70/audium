@@ -1,4 +1,4 @@
-using MediatR;
+п»їusing MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Audium.Application.Tracks;
 
@@ -19,9 +19,9 @@ namespace Audium.WebApi.Controllers
 
 
         /// <summary>
-        /// Получить трек для текущего дня
+        /// РџРѕР»СѓС‡РёС‚СЊ С‚СЂРµРє РґР»СЏ С‚РµРєСѓС‰РµРіРѕ РґРЅСЏ
         /// </summary>
-        /// <returns>Получить медиа-файл на сегодня</returns>
+        /// <returns>С‚СЂРµРє РґР»СЏ С‚РµРєСѓС‰РµРіРѕ РґРЅСЏ</returns>
         [HttpGet("for-today")]
         public async Task<IActionResult> GetTrackForToday()
         {
@@ -35,9 +35,9 @@ namespace Audium.WebApi.Controllers
         }
 
         /// <summary>
-        /// Получить случайный трек
+        /// РџРѕР»СѓС‡РёС‚СЊ СЃР»СѓС‡Р°Р№РЅС‹Р№ С‚СЂРµРє
         /// </summary>
-        /// <returns>Получить случайный трек</returns>
+        /// <returns>СЃР»СѓС‡Р°Р№РЅС‹Р№ С‚СЂРµРє</returns>
         [HttpGet("random")]
         public async Task<IActionResult> GetRandomTrack()
         {

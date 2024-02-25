@@ -144,7 +144,7 @@ namespace Audium.Persistance.Migrations
             modelBuilder.Entity("Audium.Domain.TrackForDate", b =>
                 {
                     b.HasOne("Audium.Domain.Track", "Track")
-                        .WithMany()
+                        .WithMany("TrackForDates")
                         .HasForeignKey("TrackId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -166,6 +166,11 @@ namespace Audium.Persistance.Migrations
             modelBuilder.Entity("Audium.Domain.Artist", b =>
                 {
                     b.Navigation("Tracks");
+                });
+
+            modelBuilder.Entity("Audium.Domain.Track", b =>
+                {
+                    b.Navigation("TrackForDates");
                 });
 #pragma warning restore 612, 618
         }

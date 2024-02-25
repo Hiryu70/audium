@@ -10,10 +10,10 @@ namespace Audium.Application.Helpers;
 public static class TrackContentHelper
 {
     /// <summary>
-    /// 
+    /// На основании метаданных трека возвращает его контент в виде массива байтов
     /// </summary>
     /// <param name="track">track object</param>
-    /// <returns></returns>
+    /// <returns>трека в виде массива байтов</returns>
     public static byte[] GetBinaryContentForTrack(Track track)
     {
         var filePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\", track.StorageFileName));

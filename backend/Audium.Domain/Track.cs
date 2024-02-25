@@ -9,4 +9,5 @@ public class Track : BaseEntity
     public Artist Artist { get; set; }
     public string? ExternalSourceUrl { get; set; }
     public string? StorageFileName { get; set; }
+    public virtual ICollection<TrackForDate> TrackForDates { get; set; }
 }
