@@ -38,12 +38,12 @@ const Guess = ({ state, text }) => {
   }
 
   return (
-    <div>
+    <>
       <Flex w='xl' h={12} position={'relative'} justifyContent={'center'} alignItems={'center'} borderWidth={2} borderColor={borderColor} bg={backgroundColor} borderRadius='sm'>
         {icon}
         <Text align={'center'} fontSize='md' letterSpacing={letterSpacing} as='b'>{text}</Text>
       </Flex>
-    </div>
+    </>
   );
 };
 
