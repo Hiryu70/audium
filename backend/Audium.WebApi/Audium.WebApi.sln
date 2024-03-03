@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audium.WebApi", "Audium.WebApi.csproj", "{AD721595-A13A-4582-A2DD-8326C1023F1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audium.WebApi", "Audium.WebApi.csproj", "{AD721595-A13A-4582-A2DD-8326C1023F1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E0F1323-65F5-4D80-B827-AEB867BDA6F0} = {4E0F1323-65F5-4D80-B827-AEB867BDA6F0}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audium.Persistance", "..\Audium.Persistance\Audium.Persistance.csproj", "{0546C87B-B822-42CC-84FC-D2AFC459F780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audium.Persistance", "..\Audium.Persistance\Audium.Persistance.csproj", "{0546C87B-B822-42CC-84FC-D2AFC459F780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audium.Domain", "..\Audium.Domain\Audium.Domain.csproj", "{EEA2DE92-1E86-42DC-8903-0723BF4A1527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audium.Domain", "..\Audium.Domain\Audium.Domain.csproj", "{EEA2DE92-1E86-42DC-8903-0723BF4A1527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audium.Application", "..\Application\Audium.Application.csproj", "{7F46E17A-7D22-4AE3-8D2E-A15805860BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audium.Application", "..\Audium.Application\Audium.Application.csproj", "{4E0F1323-65F5-4D80-B827-AEB867BDA6F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +32,10 @@ Global
 		{EEA2DE92-1E86-42DC-8903-0723BF4A1527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA2DE92-1E86-42DC-8903-0723BF4A1527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA2DE92-1E86-42DC-8903-0723BF4A1527}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F46E17A-7D22-4AE3-8D2E-A15805860BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F46E17A-7D22-4AE3-8D2E-A15805860BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F46E17A-7D22-4AE3-8D2E-A15805860BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F46E17A-7D22-4AE3-8D2E-A15805860BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E0F1323-65F5-4D80-B827-AEB867BDA6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0F1323-65F5-4D80-B827-AEB867BDA6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0F1323-65F5-4D80-B827-AEB867BDA6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0F1323-65F5-4D80-B827-AEB867BDA6F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Audium.Application.csproj" />
+    <ProjectReference Include="..\Audium.Application\Audium.Application.csproj" />
     <ProjectReference Include="..\Audium.Persistance\Audium.Persistance.csproj" />
   </ItemGroup>
 
